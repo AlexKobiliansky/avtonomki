@@ -1,0 +1,60 @@
+.topline
+  padding: 10px 0 30px
+
+.topline-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+
+.top-cart
+  position: relative
+  .svg
+    height: 34px
+    width: auto
+    +mt(.3s)
+  &:hover
+    .svg
+      fill: $acc-darkblue
+  .num
+    position: absolute
+    display: flex
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    line-height: 1
+    justify-content: center
+    align-items: center
+    background-color: $acc-darkblue
+    color: #fff
+    font-size: 10px
+    right: -4px
+    bottom: -3px
+
+.top-messangers
+  font-size: 0
+  .messanger-item
+    display: inline-flex
+    align-items: center
+    margin-right: 30px
+    font-size: 14px
+    img
+      margin-right: 9px
+    a
+      color: $text
+      &:hover
+        color: $acc-darkblue
+    &:last-child
+      margin-right: 0
+
+.top-worktime
+  span
+    display: inline-block
+    font-size: 12px
+    font-weight: 500
+    opacity: .4
+    margin-bottom: 5px
+  p
+    margin-bottom: 0
+
+
