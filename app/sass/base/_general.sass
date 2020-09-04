@@ -13,14 +13,15 @@
   color: #666
 
 ::selection
-  background-color: $accent
+  background-color: $acc-blue
   color: #fff
 
 body
-  font-size: 16px
+  font-size: 14px
   min-width: 320px
   position: relative
-  line-height: 1.5
+  line-height: 1.4
+  letter-spacing: 0.01em
   font-family: $default-font
   overflow-x: hidden
   color: $text
@@ -48,8 +49,9 @@ a:hover, a:active, a:focus
   text-decoration: none
 
 a
-  color: $accent
+  color: $acc-blue
   text-decoration: none
+  +mt(.2s)
 
 a, li, button
   outline: none!important
@@ -61,13 +63,6 @@ ul
 
 .hidden
   display: none!important
-
-//pixel-glass custom
-//html
-//  background-repeat: no-repeat
-//  background-position: 50% 0
-//  background-image: url('../img/layout/test.png')
-
 // ======= END TEMPLATE STYLES =======
 
 
