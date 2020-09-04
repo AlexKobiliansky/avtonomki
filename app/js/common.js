@@ -1,5 +1,22 @@
 $(document).ready(function(){
 
+    var element = document.querySelector( '.main-mnu' );
+
+    var droppy = new Droppy( element, {
+        parentSelector: 'li',
+        dropdownSelector: 'li > ul',
+        triggerSelector: 'a'
+    } );
+
+    $('.droppy__parent').on("mouseenter", function(){
+        $(this).children('.droppy__drop ').addClass('droppy__drop--active')
+    });
+
+    $('.droppy__parent').on("mouseleave", function(){
+        $(this).children('.droppy__drop ').removeClass('droppy__drop--active')
+    });
+
+
     $('img.svg').each(function(){
         var $img = jQuery(this);
         var imgID = $img.attr('id');
