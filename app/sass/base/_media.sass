@@ -6,6 +6,25 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-advantages
+    .section-title
+      margin-bottom: 30px
+
+  .advantages-wrap
+    &:after
+      width: calc(100% + 30px)
+      left: -15px
+
+  .adv-item
+    width: calc(33.3333% - 10px)
+    .svg
+      width: 30px
+    &-content
+      width: calc(100% - 45px)
+      font-size: 12px
+    &-title
+      font-size: 16px
+
   .section-title
     font-size: 32px
     &:before, &:after
@@ -49,6 +68,13 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .adv-item
+    width: calc(50% - 10px)
+    margin-bottom: 20px
+
+  .advantages-wrap
+    flex-wrap: wrap
 
   .icat-item
     flex-direction: column-reverse
@@ -126,6 +152,17 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .adv-item
+    width: 100%
+    &-content
+      font-size: 14px
+      width: calc(100% - 66px)
+    .svg
+      width: 46px
+    &-title
+      font-size: 18px
+
+
   .s-index-catalog
     padding-top: 50px
 
@@ -176,6 +213,10 @@
     width: calc(100% - 90px)
 
 @media (max-width: 390px)
+
+  .adv-item
+    &-content
+      padding-right: 0
 
   .intro-slide
     h1
