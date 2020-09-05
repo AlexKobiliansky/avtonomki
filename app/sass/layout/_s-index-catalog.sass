@@ -1,0 +1,54 @@
+.s-index-catalog
+  padding-top: 65px
+  margin-bottom: 200px
+  .section-title
+    margin-bottom: 25px
+
+.icats-wrap
+  display: flex
+  position: relative
+  width: calc(100% + 30px)
+  left: -15px
+  padding-bottom: 58px
+  &:after
+    content: ''
+    position: absolute
+    left: 15px
+    bottom: 0
+    width: calc(100% - 30px)
+    height: 1px
+    background-color: #e8e8e8
+
+.icat-item
+  width: 33.333333%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border: 1px solid #e8e8e8
+  padding: 35px 50px 35px 35px
+  position: relative
+  min-height: 230px
+  &-img
+    width: 50%
+    height: auto
+  &-title
+    position: relative
+    width: 50%
+    font-size: 18px
+    font-weight: 700
+    color: $text
+    +mt(.5s)
+  &-more
+    position: absolute
+    bottom: 65px
+    color: $text
+    +mt(.5s)
+    opacity: 0
+    img
+      margin-left: 11px
+  &:hover
+    box-shadow: 0 0 30px 10px rgba(#000, .1)
+    .icat-item-title
+      margin-bottom: 30px
+    .icat-item-more
+      opacity: 1

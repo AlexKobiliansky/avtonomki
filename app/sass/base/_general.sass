@@ -122,3 +122,32 @@ ul
     padding: 0
     cursor: pointer
     margin: 0 11px
+
+.section-title
+  position: relative
+  font-size: 40px
+  font-weight: 600
+  padding-left: 78px
+  line-height: 1
+  &:before
+    content: ''
+    position: absolute
+    width: 77px
+    height: 29px
+    background-color: #e8e8e8
+    top: 5px
+    left: 20px
+  span
+    position: relative
+    z-index: 2
+  &:after
+    content: ''
+    position: absolute
+    width: 270px
+    height: 29px
+    background-image: linear-gradient(to right, transparent, #f0f0f0)
+    right: 0
+    top: 5px
+
+
+

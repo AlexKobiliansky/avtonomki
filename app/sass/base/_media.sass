@@ -6,6 +6,23 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .section-title
+    font-size: 32px
+    &:before, &:after
+      top: 3px
+      height: 24px
+
+  .icats-wrap
+    width: 100%
+    left: 0
+    padding-bottom: 40px
+    border-bottom: 1px solid #e8e8e8
+    &:after
+      display: none
+
+  .icat-item
+    padding-left: 20px
+    padding-right: 30px
 
   .intro-slide
     h1
@@ -32,6 +49,21 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .icat-item
+    flex-direction: column-reverse
+    align-items: center
+    justify-content: flex-end
+    &-img
+      width: 60%
+      margin-bottom: 20px
+    &-title
+      width: 100%
+      text-align: center
+      margin-bottom: 0!important
+    &-more
+      display: none
+
 
   .intro-slide
     padding: 40px 40px 60px
@@ -85,9 +117,39 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .icat-item
+    min-height: auto
+    padding: 20px 15px
+    &-title
+      font-size: 16px
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-index-catalog
+    padding-top: 50px
+
+  .icats-wrap
+    flex-direction: column
+
+  .icat-item
+    width: 100%
+    padding-bottom: 30px
+    &-title
+      font-size: 18px
+    &-img
+      margin-bottom: 10px
+
+  .section-title
+    padding-left: 30px
+    font-size: 24px
+    &:before, &:after
+      height: 17px
+    &:before
+      width: 40px
+      left: 5px
+    &:after
+      width: 200px
 
   .intro-slide
     padding-left: 0
