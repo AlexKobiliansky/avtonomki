@@ -1,0 +1,46 @@
+.s-intro
+  background-color: #213145
+  color: #fff
+  padding-bottom: 65px
+
+
+
+.intro-slide
+  display: flex!important
+  flex-direction: column
+  justify-content: flex-end
+  align-items: flex-start
+  position: relative
+  outline: none!important
+  padding-bottom: 85px
+  padding-top: 100px
+  padding-left: 35px
+  h1
+    font-size: 44px
+    font-weight: 900
+    text-transform: uppercase
+    line-height: 1.2
+    margin-bottom: 20px
+  &-desc
+    letter-spacing: 0.05em
+    width: 50%
+    opacity: .74
+    margin-bottom: 65px
+  &-img
+    position: absolute
+    right: 0
+    top: 95px
+  .btn-arrow
+    display: inline-block!important
+
+.intro-slider
+  position: relative
+  .slick-prev, .slick-next
+    position: absolute
+    z-index: 2
+    top: calc(50% - 16px)
+  .slick-prev
+    transform: rotate(180deg)
+    left: -55px
+  .slick-next
+    right: -55px

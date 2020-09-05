@@ -96,6 +96,27 @@ $(document).ready(function(){
     });
 
 
+    $('.intro-slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        // autoplay: true,
+        autoplaySpeed: 6000,
+        fade: true,
+        cssEase: 'linear',
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    adaptiveHeight: true
+                }
+            }
+        ]
+    });
+
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

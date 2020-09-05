@@ -66,3 +66,59 @@ ul
 // ======= END TEMPLATE STYLES =======
 
 
+.btn
+  display: inline-block
+  white-space: nowrap
+  +mt(.3s)
+  cursor: pointer
+  line-height: 1
+  font-size: 12px
+  text-transform: uppercase
+  text-align: center
+  padding: 19px 36px
+
+.btn-grad
+  background-image: linear-gradient(to top, #2f7ff2, #145cca)
+  color: #fff
+  &:hover
+    background-image: linear-gradient(to bottom, #2f7ff2, #145cca)
+    color: #fff
+
+.btn-arrow
+  position: relative
+  margin-left: 12px
+
+.slick-prev, .slick-next
+  font-size: 0
+  width: 32px
+  height: 32px
+  border-radius: 50%
+  border: 1px solid #fff
+  background-color: transparent
+  background-image: url('../img/icons/triangle-arrow-right.png')
+  background-size: 8px 13px
+  background-position: center center
+  background-repeat: no-repeat
+  +mt(.3s)
+  cursor: pointer
+  &:hover
+    background-color: $acc-blue
+    border-color: $acc-blue
+
+.slick-dots
+  text-align: center
+  li
+    display: inline-block
+    &.slick-active
+      button
+        background-color: $acc-darkblue
+  button
+    font-size: 0
+    width: 9px
+    height: 9px
+    border-radius: 50%
+    background-color: #fff
+    border: 2px solid #fff
+    padding: 0
+    cursor: pointer
+    margin: 0 11px
