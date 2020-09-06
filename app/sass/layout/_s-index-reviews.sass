@@ -1,0 +1,43 @@
+.s-index-reviews
+  position: relative
+  padding: 55px 0 85px
+  .container
+    position: relative
+  .section-link
+    position: absolute
+    right: 32px
+    top: 12px
+  .section-title
+    padding-right: 200px
+    margin-bottom: 30px
+
+.index-reviews-wrap
+  display: flex
+
+.irev-item
+  width: 33.3333%
+  padding: 8px 15px
+  border-right: 1px solid #dcdcdc
+  &:first-child
+    padding-left: 0
+  &:last-child
+    padding-right: 0
+    border-right: none
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+  &-img
+    width: 83px
+    height: 83px
+    border-radius: 50%
+    +bg-cover
+  &-info
+    width: calc(100% - 115px)
+    font-weight: 600
+  &-name
+    font-size: 16px
+  &-date
+    font-size: 10px
+    opacity: .29
