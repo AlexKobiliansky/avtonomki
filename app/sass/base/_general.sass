@@ -150,4 +150,105 @@ ul
     top: 5px
 
 
+.product-item
+  box-shadow: 0 0 10px 5px rgba(#000, .05)
+  padding: 30px 15px 35px
+  &-img
+    margin-bottom: 15px
+    img
+      width: 100%
+      height: 100%
+      object-fit: contain
+  &-labels
+    font-size: 0
+    margin-bottom: 10px
+    min-height: 20px
+    .label
+      font-size: 10px
+      text-transform: uppercase
+      line-height: 1
+      font-weight: 800
+      color: #fff
+      display: inline-block
+      border-radius: 2px
+      margin-right: 5px
+      padding: 5px 8px
+      margin-bottom: 5px
+      &.label-hit
+        background-color: red
+      &.label-stock
+        background-color: green
+      &.label-new
+        background-color: orange
+  &-title
+    text-transform: uppercase
+    font-weight: 600
+    color: $text
+    margin-bottom: 15px
+    display: inline-block
+    &:hover
+      text-decoration: underline
+  &-rate
+    margin-bottom: 30px
+    img
+      display: inline-block!important
+      width: auto!important
+      cursor: pointer
+  &-price
+    font-weight: 700
+    margin-bottom: 18px
+    span
+      display: inline-block
+    .price-label
+      letter-spacing: 0.05em
+      color: #a4a4a4
+      margin-right: 5px
+    .new
+      font-size: 18px
+    .old
+      position: relative
+      color: #a4a4a4
+      margin-right: 5px
+      font-weight: 500
+      text-decoration: line-through
+  .to-cart
+    font-size: 12px
+    text-transform: uppercase
+    border: 1px solid #b7babe
+    padding: 7px 33px 16px
+    color: $text
+    +mt(0s)
+    .svg
+      display: inline-block!important
+      height: 20px
+      width: auto
+      fill: #878787
+      position: relative
+      top: 4px
+      margin-left: 10px
+    &:hover
+      color: #fff
+      background-image: linear-gradient(to bottom, #145cca, #2f7ff2)
+      .svg
+        fill: #fff
 
+.owl-carousel
+  position: relative
+  .owl-nav
+    button.owl-prev, button.owl-next
+      width: 32px
+      height: 32px
+      cursor: pointer
+      +mt(.3s)
+      border-radius: 50%
+      border: 1px solid #bababa
+      background-image: url('../img/icons/owl-arrow-grey.png')
+      background-size: 5px 10px
+      background-repeat: no-repeat
+      background-position: center center
+      &:hover
+        background-color: $acc-darkblue
+        border-color: $acc-darkblue
+        background-image: url('../img/icons/owl-arrow-white.png')
+    button.owl-prev
+      transform: rotate(180deg)

@@ -6,6 +6,13 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .tabs-slider
+    .owl-nav
+      button.owl-prev
+        left: -35px
+      button.owl-next
+        right: -35px
+
   .s-advantages
     .section-title
       margin-bottom: 30px
@@ -143,6 +150,13 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .tabs-controls
+    li
+      a
+        font-size: 14px
+        padding: 12px 20px
+
   .icat-item
     min-height: auto
     padding: 20px 15px
@@ -151,6 +165,42 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .tabs-controls
+    border: none
+    li
+      box-shadow: none!important
+      &.ui-tabs-active
+        a
+          background-color: $acc-darkblue
+          border-color: $acc-darkblue
+          color: #fff
+      a
+        border: 1px solid #ccc
+        font-size: 10px
+        padding: 9px 12px
+
+
+  .tab-wrap
+    padding-bottom: 23px
+
+  .tabs-slider
+    width: 80%
+    margin-left: auto
+    margin-right: auto
+    box-shadow: 0 0 10px rgba(#000, .1)
+    padding: 0
+    .product-item
+      box-shadow: none
+      border: 1px solid #ccc
+    .owl-stage
+      width: 100%
+      left: 0
+      padding: 0
+    .owl-stage-outer
+      width: 100%
+      left: 0
+      padding: 0
 
   .adv-item
     width: 100%
@@ -213,6 +263,15 @@
     width: calc(100% - 90px)
 
 @media (max-width: 390px)
+
+  .tabs-controls
+    li
+      a
+        font-size: 9px
+        padding: 10px
+
+  .tabs-slider
+    width: 100%
 
   .adv-item
     &-content
