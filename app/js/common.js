@@ -121,7 +121,8 @@ $(document).ready(function(){
 
     function heightses() {
         if ($(window).width()>480) {
-            $('.product-item-title').matchHeight();
+            $('.tabs-slider .product-item-title').matchHeight();
+            $('.stocks-wrap .product-item-title').matchHeight({byRow: true});
         }
     }
 

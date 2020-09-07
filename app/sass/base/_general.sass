@@ -305,3 +305,28 @@ ul
   100%
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
 
+
+
+.breadcrumbs
+  padding: 30px 0
+  a
+    display: inline-block
+    line-height: 1
+    position: relative
+    font-size: 12px
+    color: #888888
+    &:hover
+      color: $acc-darkblue
+    &:after
+      content: ' /'
+      color: #888
+    &:last-child
+      color: $text
+      pointer-events: none
+      &:after
+        display: none
+
+.s-text
+  font-size: 24px
+  font-weight: 600
+  margin-bottom: 25px
