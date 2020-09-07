@@ -180,6 +180,8 @@ $(document).ready(function(){
         path: "libs/raty/img/"
     });
 
+    $('.preloader').fadeOut();
+
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
