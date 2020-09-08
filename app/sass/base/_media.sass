@@ -103,6 +103,28 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .product
+    padding-top: 0
+    &-topleft
+      display: none
+
+    &-topright
+      width: 100%
+      padding-left: 0
+    &-mobile-slider
+      display: flex
+      justify-content: space-between
+    &-rate-line
+      border-bottom: none
+    &-bottom
+      flex-direction: column
+    &-bottomleft
+      width: 100%
+      margin-bottom: 30px
+    &-bottomright
+      width: 100%
+      padding-left: 0
+
   .foot-wrap
     flex-wrap: wrap
 
@@ -282,6 +304,52 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-product
+    padding-bottom: 50px
+
+  .product
+    &-title
+      font-size: 16px
+    &-rate-line
+      flex-direction: column
+      align-items: flex-start
+    &-rate-wrap
+      margin-bottom: 10px
+    &-mobile-slider
+      flex-direction: column
+    &-slide
+      height: 340px
+    &-slider
+      width: 100%
+      margin-bottom: 10px
+    &-slider-nav
+      width: 100%
+      font-size: 0
+    &-nav
+      display: inline-block
+      width: calc(33.3333% - 7px)
+      margin-bottom: 0
+      margin-right: 10px
+      &:last-child
+        margin-right: 0
+    &-price-line
+      flex-direction: column
+    .amount-wrap
+      margin-bottom: 20px
+    .btn-wrap
+      text-align: center
+    &-block
+      padding: 20px 15px
+      h3
+        font-size: 20px
+    &-char
+      font-size: 12px
+    &-char-placeholder
+      display: none
+
+
+
+
   .s-stocks
     .section-title
       margin-bottom: 35px
@@ -406,6 +474,12 @@
     width: calc(100% - 90px)
 
 @media (max-width: 390px)
+
+  .product
+    &-slide
+      height: 240px
+    &-nav
+      height: 90px
 
   .tabs-controls
     li

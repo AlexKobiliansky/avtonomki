@@ -1,0 +1,236 @@
+.s-product
+  padding-bottom: 85px
+
+.product
+  padding-top: 40px
+  &-top
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+  &-topleft
+    width: 50%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &-slider
+    width: calc(100% - 150px)
+    box-shadow: 0 0 15px 5px rgba(#000, .1)
+  &-slide
+    height: 430px
+    padding: 20px
+    img
+      width: 100%
+      height: 100%
+      object-fit: contain
+  &-slider-nav
+    width: 130px
+  &-nav
+    height: 130px
+    background-size: contain
+    background-position: center center
+    background-repeat: no-repeat
+    box-shadow: 0 0 15px 5px rgba(#000, .1)
+    margin-bottom: 20px
+    cursor: pointer
+    &:last-child
+      margin-bottom: 0
+  &-topright
+    width: 50%
+    padding-left: 30px
+  &-title
+    font-size: 21px
+    font-weight: 700
+    letter-spacing: +0.05em
+    text-transform: uppercase
+    margin-bottom: 20px
+  &-labels-line
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 25px
+  &-labels
+    width: calc(100% - 170px)
+    font-size: 0
+    min-height: 20px
+    .label
+      font-size: 10px
+      text-transform: uppercase
+      line-height: 1
+      font-weight: 800
+      color: #fff
+      display: inline-block
+      border-radius: 2px
+      margin-right: 5px
+      padding: 5px 8px
+      margin-bottom: 5px
+      &.label-hit
+        background-color: red
+      &.label-stock
+        background-color: green
+      &.label-new
+        background-color: orange
+  &-code
+    margin-bottom: 5px
+    color: #656565
+  &-rate-line
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 20px
+    border-bottom: 1px solid #e5e5e5
+  &-rate-wrap
+    display: flex
+    align-items: center
+  &-rate
+    margin-bottom: 2px
+    margin-right: 12px
+  &-grade
+    font-size: 12px
+    margin-right: 12px
+  &-rate-span
+    color: #656565
+  &-presenсe
+    padding-left: 15px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      background-color: green
+      left: 2px
+      top: calc(50% - 2.5px)
+    &.not-available
+      color: #ccc
+      &:before
+        background-color: red
+  &-adds
+    padding-top: 20px
+    padding-bottom: 5px
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 0.05em
+    border-bottom: 1px solid #e5e5e5
+  &-add
+    margin-bottom: 15px
+    span
+      color: #888888
+    a
+      display: inline-block
+      color: $text
+      position: relative
+      &:hover
+        text-decoration: underline
+      &:after
+        content: ','
+        text-decoration: none
+      &:last-child
+        &:after
+          display: none
+  &-price-line
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 30px
+    padding-bottom: 22px
+  &-price
+    .label
+      font-weight: 700
+      letter-spacing: 0.05em
+      color: #888
+    .new
+      font-size: 24px
+      font-weight: 700
+    .old
+      font-size: 18px
+      color: #ccc
+      font-weight: 500
+      text-decoration: line-through
+      margin-left: 10px
+      position: relative
+      top: -8px
+  .btn-wrap
+    text-align: right
+  &-bottom
+    display: flex
+  &-bottomleft
+    width: 50%
+  &-bottomright
+    width: 50%
+    padding-left: 30px
+  &-block
+    box-shadow: 0 0 15px 5px rgba(#000, .1)
+    height: 100%
+    padding: 35px 50px 40px 35px
+    position: relative
+    h3
+      line-height: 1
+      font-size: 24px
+      font-weight: 600
+      margin-bottom: 20px
+    .wrapper
+      background-color: #fff
+      position: relative
+      z-index: 2
+    &:after
+      content: ''
+      position: absolute
+      width: calc(100% - 85px)
+      height: calc(100% - 75px)
+      background-color: #e5e5e5
+      top: 35px
+      left: 35px
+
+  &-block-wrap
+    border-top: 3px solid #e5e5e5
+    border-bottom: 3px solid #e5e5e5
+
+  &-chars-wrap
+    padding: 25px 0 35px
+  &-description-wrap
+    padding: 25px 0 0
+    ol
+      padding-left: 15px
+  &-char
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 12px
+  &-char-desc
+    color: #888
+    max-width: 50%
+    padding-right: 5px
+  &-char-val
+    max-width: 50%
+    padding-left: 5px
+    text-align: right
+  &-char-placeholder
+    height: 1px
+    background-color: #ebebeb
+    flex-grow: 1
+  &-mobile-slider
+    display: none
+
+
+
+
+.amount-wrap
+  font-size: 16px
+  .label
+    font-weight: 700
+    letter-spacing: 0.05em
+    color: #888
+  input
+    line-height: 1
+    width: 39px
+    text-align: center
+    padding: 3px 7px
+    border: 1px solid #e8e8e8
+  button
+    border: none
+    background-color: transparent
+    cursor: pointer
+
