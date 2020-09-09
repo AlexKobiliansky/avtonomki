@@ -202,6 +202,8 @@ $(document).ready(function(){
         path: "libs/raty/img/"
     });
 
+    $('.filter select').styler();
+
     $('.preloader').fadeOut();
 
 

@@ -1,0 +1,63 @@
+.s-category
+  padding-bottom: 90px
+  .section-title
+    margin-bottom: 40px
+  .product-item
+    margin-bottom: 30px
+
+.filters
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: #fff
+  box-shadow: 0 0 15px 5px rgba(#000, .1)
+  padding: 12px 20px
+  letter-spacing: 0.05em
+  margin-bottom: 30px
+  label
+    margin-bottom: 0
+
+.filters-left
+  display: flex
+  align-items: center
+
+.filter
+  span
+    display: inline-block
+    margin-right: 12px
+  &-types
+    margin-right: 21px
+
+.jq-selectbox__select
+  height: auto
+  background: transparent!important
+  box-shadow: none
+  border-radius: 0
+  border: 1px solid #dcdcdc!important
+  line-height: 1
+  padding: 11px 30px 11px 13px
+  color: rgba($text, .5)
+  width: 190px
+
+.jq-selectbox__select-text
+  font-family: "Inter", sans-serif
+
+
+.jq-selectbox__trigger
+  border: none
+
+.jq-selectbox__trigger-arrow
+  border: none
+  width: 9px
+  height: 7px
+  background-image: url('../img/icons/select-arrow.png')
+  top: calc(50% - 3.5px)
+
+.jq-selectbox
+  &.opened
+    .jq-selectbox__trigger-arrow
+      transform: rotate(180deg)
+
+.filter-nums
+  .jq-selectbox__select
+    width: 65px
