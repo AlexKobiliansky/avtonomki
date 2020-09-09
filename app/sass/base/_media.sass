@@ -13,6 +13,13 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-contacts
+    .section-title
+      margin-bottom: 50px
+
+  #map
+    height: 500px
+
   .foot-left
     margin-right: 40px
 
@@ -228,6 +235,17 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .contacts-wrap
+    flex-direction: column
+    &>div
+      width: 100%
+
+  .contact-item
+    margin-bottom: 30px
+
+  #map
+    height: 400px
 
   .filter-types
     margin-right: 10px
@@ -510,6 +528,7 @@
     width: calc(100% - 90px)
 
 @media (max-width: 390px)
+
 
   .product
     &-slide
