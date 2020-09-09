@@ -13,6 +13,17 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .about-wrap
+    flex-direction: column-reverse
+    &>div
+      width: 100%
+
+  .about-right
+    margin-bottom: 40px
+
+  .certs-wrap
+    grid-gap: 10px
+
   .s-contacts
     .section-title
       margin-bottom: 50px
@@ -332,6 +343,34 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-about
+    .section-title
+      margin-bottom: 30px
+    h3
+      font-size: 20px
+      margin-bottom: 10px
+
+  .about-slide
+    height: 260px
+
+  .about-slider
+    margin-bottom: 12px
+
+  .about-nav
+    width: calc(33.333% - 8px)
+    margin-right: 12px
+    height: 100px
+
+  .s-certificates
+    padding-bottom: 50px
+    padding-top: 20px
+    .s-text
+      margin-bottom: 10px
+
+  .certs-wrap
+    grid-template-columns: repeat(2, 1fr)
+
+
   .filters
     flex-direction: column
     align-items: flex-start
@@ -529,6 +568,12 @@
 
 @media (max-width: 390px)
 
+
+  .about-slide
+    height: 180px
+
+  .about-nav
+    height: 70px
 
   .product
     &-slide

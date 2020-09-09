@@ -162,6 +162,26 @@ $(document).ready(function(){
     });
 
 
+    $('.about-slider').owlCarousel({
+        loop:false,
+        nav:false,
+        items: 1,
+        thumbs: true,
+        dots: false,
+        thumbsPrerendered: true,
+        thumbItemClass: 'about-nav',
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+        mouseDrag: false,
+        navText: ['', ''],
+    });
+
+    $('.about-slider').photoswipe({
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+    });
+
+    $('.certs-wrap').photoswipe();
 
     $('.tabs-slider').owlCarousel({
         loop: false,
