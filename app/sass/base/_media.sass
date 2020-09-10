@@ -127,6 +127,19 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+
+  .reviews-wrap
+    grid-template-columns: repeat(1, 1fr)
+
+  .review-form
+    margin-bottom: 50px
+    .form-labels-wrap
+      label
+        &:first-child
+          width: 300px
+        &:last-child
+          padding-left: 50px
+
   .cart-item
     &-img
       height: 80px
@@ -362,6 +375,45 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .review-item
+    padding: 20px 15px 30px
+    &-img
+      width: 60px
+      height: 60px
+    &-name
+      padding-left: 15px
+      padding-right: 8px
+      font-size: 14px
+    &-desc
+      font-size: 12px
+
+  .reviews-wrap
+    margin-bottom: 30px
+
+  .review-form
+    padding: 20px 25px 40px
+    .form-labels-wrap
+      flex-direction: column-reverse
+      label
+        &:last-child
+          padding-left: 0
+        &:first-child
+          width: 100%
+    label
+      margin-bottom: 20px
+      span
+        font-size: 14px
+        margin-bottom: 9px
+    .btn-wrap
+      text-align: center
+    .s-text
+      text-align: center
+
+
+
+
+
 
   .s-cart
     padding-bottom: 40px
@@ -613,6 +665,27 @@
     width: calc(100% - 90px)
 
 @media (max-width: 390px)
+
+  .review-form
+    .btn
+      width: 100%
+      padding-left: 10px
+      padding-right: 10px
+
+  .review-item
+    &-top
+      flex-direction: column
+    &-img
+      width: 90px
+      height: 90px
+      margin-bottom: 15px
+    &-name
+      font-size: 16px
+      margin-bottom: 5px
+    &-date
+      font-size: 12px
+    &-desc
+      text-align: center
 
   .cart-item
     &-img

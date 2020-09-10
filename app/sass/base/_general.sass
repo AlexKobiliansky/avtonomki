@@ -80,6 +80,7 @@ ul
 .btn-grad
   background-image: linear-gradient(to top, #2f7ff2, #145cca)
   color: #fff
+  border: none
   &:hover
     background-image: linear-gradient(to bottom, #2f7ff2, #145cca)
     color: #fff
@@ -331,3 +332,130 @@ ul
   font-size: 24px
   font-weight: 600
   margin-bottom: 25px
+
+
+
+form
+  label
+    display: block
+    margin-bottom: 35px
+    span
+      display: block
+      font-size: 18px
+      font-weight: 600
+      line-height: 1
+      margin-bottom: 18px
+  input, textarea
+    line-height: 1
+    border: none
+    background-color: #e8e8e8
+    font-size: 14px
+    padding: 15px 20px
+    width: 100%
+  textarea
+    resize: none
+    height: 136px
+
+.search-form
+  width: 500px
+  position: relative
+  label
+    display: block
+    margin-bottom: 0
+  input
+    width: 100%
+    font-size: 13px
+    line-height: 1
+    padding: 11px 19px
+    border: none
+    border-radius: 3px
+    background-color: #fff
+    &::placeholder
+      opacity: .6
+  button
+    position: absolute
+    height: 100%
+    width: 47px
+    display: flex
+    justify-content: center
+    align-items: center
+    right: 0
+    top: 0
+    z-index: 2
+    border: none
+    border-radius: 3px
+    background-color: transparent
+    cursor: pointer
+    .svg
+      height: 16px
+      width: auto
+      +mt(.3s)
+    &:before
+      content: ''
+      position: absolute
+      width: 1px
+      height: calc(100% - 10px)
+      background-color: #e8e8e8
+      left: 0
+      top: 5px
+    &:hover
+      .svg
+        //opacity: .6
+        fill: $acc-darkblue
+
+
+.review-form
+  box-shadow: 0 0 15px 5px rgba(#000, .1)
+  padding: 38px 44px 45px
+  margin-bottom: 120px
+  .form-labels-wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    &>label
+      &:first-child
+        width: 440px
+      &:last-child
+        flex: 1
+        padding-left: 85px
+
+
+.jq-file
+  box-shadow: none
+  position: relative
+  width: auto
+  max-width: 210px
+  z-index: 2
+
+
+.jq-file__browse
+  display: none
+
+.jq-file__name
+  height: auto
+  line-height: 1
+  background: transparent
+  font-size: 14px
+  padding: 15px 20px
+  width: 100%
+  border-radius: 0
+  box-shadow: none!important
+  border: none!important
+  position: relative
+  padding-left: 30px
+  text-decoration: underline
+  &:hover
+    text-decoration: none
+  &:before
+    content: ''
+    position: absolute
+    width: 18px
+    height: 18px
+    background-image: url('../img/icons/link-icon.svg')
+    +bg-cover
+    left: 0
+    top: calc(50% - 9px)
+
+
+input[type=file]::-webkit-file-upload-button /* chromes and blink button */
+  cursor: pointer
