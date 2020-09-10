@@ -13,6 +13,12 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .cart
+    margin-bottom: 50px
+
+  .cart-adds-wrap
+    display: none
+
   .about-wrap
     flex-direction: column-reverse
     &>div
@@ -120,6 +126,20 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .cart-item
+    &-img
+      height: 80px
+      width: 80px
+    &-title
+      font-size: 12px
+      padding: 0 10px
+    .amount-wrap
+      .label
+        display: none
+    &-close
+      right: 10px
+      top: 10px
 
   .filter-nums
     span
@@ -342,6 +362,32 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-cart
+    padding-bottom: 40px
+    .section-title
+      margin-bottom: 30px
+    .s-text
+      padding-left: 0
+
+  .cart-adds-wrap
+    display: block
+
+  .cart-item
+    flex-direction: column
+    &-img
+      width: 80%
+      height: 200px
+      margin-bottom: 15px
+    &-title
+      font-size: 14px
+      text-align: center
+      margin-bottom: 15px
+      padding: 0
+    .amount-wrap
+      margin-bottom: 15px
+    &-price
+      text-align: center
 
   .s-about
     .section-title
@@ -568,6 +614,11 @@
 
 @media (max-width: 390px)
 
+  .cart-item
+    &-img
+      height: 160px
+    &-title
+      font-size: 12px
 
   .about-slide
     height: 180px
