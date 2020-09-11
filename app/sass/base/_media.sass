@@ -13,6 +13,22 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+
+  .checkout-form
+    .form-labels-wrap
+      align-items: unset
+    .checkout-left
+      .checkout-block
+        height: calc(100% - 16px)
+
+  .checkout-left
+    width: 500px
+    label
+      width: 100%
+
+  .checkout-right
+    width: 400px
+
   .cart
     margin-bottom: 50px
 
@@ -127,6 +143,31 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+
+
+
+  .s-checkout
+    padding-bottom: 50px
+    .section-title
+      margin-bottom: 50px
+
+  .checkout-form
+    .form-labels-wrap
+      flex-direction: column
+
+  .checkout-left
+    width: 100%
+
+  .checkout-right
+    width: 100%
+
+  .checkout-bottom
+    flex-direction: column
+    text-align: center
+
+  .checkout-desc
+    width: 100%
+    margin-bottom: 30px
 
   .reviews-wrap
     grid-template-columns: repeat(1, 1fr)
@@ -375,6 +416,28 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .checkout-block
+    padding: 25px 15px
+    h2
+      font-size: 20px
+      padding-bottom: 10px
+      margin-bottom: 25px
+
+  .check-item
+    flex-wrap: wrap
+    &-title
+      width: 100%
+      flex: unset
+      text-align: center
+      margin-bottom: 22px
+      font-size: 12px
+    &-num
+      text-align: left
+
+  .checkout-bottom
+    padding: 0
+
 
   .review-item
     padding: 20px 15px 30px
@@ -665,6 +728,17 @@
     width: calc(100% - 90px)
 
 @media (max-width: 390px)
+
+
+  .checkout-form
+    label
+      span
+        font-size: 14px
+        margin-bottom: 8px
+
+  .checkout-left
+    label.short-label
+      width: 100%
 
   .review-form
     .btn
